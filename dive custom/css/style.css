@@ -1,0 +1,309 @@
+@charset "utf-8";
+/*-------------------------
+/*	ページ全体
+-------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ ProN", Meiryo, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+}
+
+/*-------------------------
+/*	header / MV
+-------------------------*/
+header h1 {
+  margin: 0;
+  padding: 20px;
+}
+
+header img {
+  width: 170px;
+  margin: 0 auto;
+}
+
+.mv-area img {
+  width: 100%;
+}
+
+/*-------------------------
+/*	section共通
+-------------------------*/
+section {
+  width: 100%;
+  padding: 40px 0;
+}
+
+section:nth-of-type(1) {
+  background: #c5a17e;
+}
+
+section:nth-of-type(2) {
+  background: #e9ddcb;
+}
+
+section:nth-of-type(3) {
+  background: #57483c;
+}
+
+.section-inner {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* 見出し */
+h2 {
+  border-bottom: 4px solid #fff;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* 通常テキスト */
+p {
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* リスト */
+ol li {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* テーブル */
+table {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 1em;
+  border: 1px solid #3d5a6d;
+  color: #3d5a6d;
+}
+
+th {
+  background: #bfe1f6;
+}
+
+/*-------------------------
+/*	フォーム
+-------------------------*/
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+form dt {
+  margin-bottom: 20px;
+}
+
+form dt,
+form label {
+  color: #fff;
+}
+
+form dt::before {
+  content: "◆";
+  margin-right: 10px;
+}
+
+/* form dt::after {
+  content: "TEST";
+} */
+
+form dd {
+  margin-bottom: 40px;
+  margin-left: 0;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: .5em;
+  font-size: 1.1em;
+}
+
+input[type="radio"] {
+  width: 1em;
+  margin-left: 24px;
+  margin-right: 4px;
+}
+
+button[type="submit"] {
+  background: #3eb6bd;
+  margin: 40px auto 0;
+  display: block;
+  width: 70%;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.form-img-area img {
+  width: 100%;
+}
+
+/*-------------------------
+/*	footer
+-------------------------*/
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: .9em;
+}
+
+address,
+small {
+  margin-bottom: 10px;
+  color: #2f4858;
+}
+
+
+/*-------------------------
+  陶芸教室 土季 デザイン調整
+-------------------------*/
+
+/* ページ全体 */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #3f342c;
+  line-height: 1.9;
+}
+
+/* 見出し */
+h2 {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid;
+  padding-bottom: 12px;
+}
+
+/* 紹介エリア */
+section:nth-of-type(1) h2,
+section:nth-of-type(1) p {
+  color: #3f342c;
+}
+
+section:nth-of-type(1) h2 {
+  border-color: #795c46;
+}
+
+/* 陶芸体験の流れ */
+section:nth-of-type(2) h2,
+section:nth-of-type(2) ol li {
+  color: #3f342c;
+}
+
+section:nth-of-type(2) h2 {
+  border-color: #a87957;
+}
+
+/* テーブル */
+table {
+  background: #fff9f0;
+}
+
+th,
+td {
+  border: 1px solid #cbb9a6;
+  color: #3f342c;
+  font-size: 14px;
+}
+
+th {
+  background: #d8c4ac;
+  font-weight: 500;
+}
+
+/* 申し込みフォーム */
+section:nth-of-type(3) h2 {
+  color: #fff9f0;
+  border-color: #c5a17e;
+}
+
+form dt,
+form label {
+  color: #fff9f0;
+}
+
+input {
+  background: #fff9f0;
+  color: #3f342c;
+  border-radius: 2px;
+}
+
+/* 申し込みボタン */
+button[type="submit"] {
+  background: #a87957;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #906348;
+}
+
+/* フッター */
+footer {
+  background: #fff9f0;
+  font-family: "Noto Serif JP", serif;
+}
+
+address,
+small {
+  color: #746a60;
+}
+
+
+/* フォームの余白 */
+form dt {
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+form dd {
+  margin-bottom: 32px;
+}
+
+/* ラジオボタン */
+input[type="radio"] {
+  accent-color: #a87957;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+input[type="radio"]:first-child {
+  margin-left: 0;
+}
+
+/* フォームのラベル */
+form label {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* フッター */
+footer address {
+  font-style: normal;
+  line-height: 2;
+}

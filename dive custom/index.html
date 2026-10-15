@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>陶芸体験・陶芸教室 - 土季 TOKI POTTERY STUDIO</title>
+
+  <meta name="description" content="陶芸教室「土季」では、手びねりや電動ろくろを使った陶芸体験をお楽しみいただけます。土の温もりに触れながら、世界にひとつだけの器をつくりませんか。">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>
+      <img src="img/logo.png" alt="陶芸教室 土季 TOKI POTTERY STUDIO">
+    </h1>
+  </header>
+
+  <main>
+
+    <!-- メインビジュアル -->
+    <div class="mv-area">
+      <img src="img/photo_01.png" alt="真心込めた器と時を刻む">
+    </div>
+
+    <!-- 教室紹介 -->
+    <section>
+      <div class="section-inner">
+
+        <h2>日常に、土と向き合うひとときを。</h2>
+
+        <p>
+          忙しい日常から少し離れ、土の温もりを感じてみませんか。<br>
+          土季では、初めての方でも気軽に楽しめる陶芸体験をご用意しています。<br>
+          自分の手で形をつくる喜びと、世界にひとつだけの器が生まれる特別な時間をお楽しみください。
+        </p>
+
+      </div>
+    </section>
+
+    <!-- 陶芸体験の流れ -->
+    <section>
+      <div class="section-inner">
+
+        <h2>陶芸体験の流れ</h2>
+
+        <ol>
+          <li>受付・ご案内（約10分）</li>
+          <li>制作体験（約60〜90分）</li>
+          <li>仕上げ・釉薬選び（約15分）</li>
+          <li>焼成・お渡し（後日）</li>
+        </ol>
+
+        <table>
+          <tr>
+            <th>料金に含まれるもの</th>
+            <td>粘土代・道具使用料・指導料・基本焼成料</td>
+          </tr>
+
+          <tr>
+            <th>料金に含まれないもの</th>
+            <td>作品の配送料・追加制作費（希望者のみ）</td>
+          </tr>
+        </table>
+
+      </div>
+    </section>
+
+    <!-- お申し込みフォーム -->
+    <section>
+      <div class="section-inner">
+
+        <h2>陶芸体験のお申し込み</h2>
+
+        <form action="program.php" method="post">
+          <dl>
+
+            <dt>
+              <label for="user-name">お名前</label>
+            </dt>
+            <dd>
+              <input type="text" id="user-name" name="user-name" required>
+            </dd>
+
+            <dt>
+              <label for="user-email">メールアドレス</label>
+            </dt>
+            <dd>
+              <input type="email" id="user-email" name="user-email" required>
+            </dd>
+
+            <dt>ご希望の体験</dt>
+            <dd>
+              <input type="radio" id="hand" name="experience" value="手びねり" required>
+              <label for="hand">手びねり</label>
+
+              <input type="radio" id="wheel" name="experience" value="電動ろくろ">
+              <label for="wheel">電動ろくろ</label>
+            </dd>
+
+            <dt>陶芸経験はありますか？</dt>
+            <dd>
+              <input type="radio" id="experience-yes" name="experience-history" value="はい" required>
+              <label for="experience-yes">はい</label>
+
+              <input type="radio" id="experience-no" name="experience-history" value="いいえ">
+              <label for="experience-no">いいえ</label>
+            </dd>
+
+          </dl>
+
+          <div class="form-submit">
+            <button type="submit" id="submit" name="submit">
+              体験を申し込む
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+    <!-- 陶芸工房の写真 -->
+    <div class="form-img-area">
+      <img src="img/photo_02.png" alt="手びねりと電動ろくろを体験できる陶芸工房">
+    </div>
+
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <address>
+      陶芸教室 土季<br>
+      TOKI POTTERY STUDIO<br>
+      土と向き合い、心をほどく。<br>
+      暮らしに寄り添う、あなただけの器を。
+    </address>
+
+    <small>&copy; TOKI POTTERY STUDIO.</small>
+  </footer>
+
+</body>
+</html>
